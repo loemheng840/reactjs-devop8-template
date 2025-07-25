@@ -33,6 +33,7 @@ jobs:
         if: always()
         run: |
           docker logout 
+          // ------------- form build and push to here add to bacis 
   deploy-service: 
     needs: build-and-push
     runs-on: self-hosted # self-hosted is the our machine
