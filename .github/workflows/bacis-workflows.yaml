@@ -2,11 +2,11 @@ on:
   push:
     branches: [ "master" ]
 env:
-  IMAGE_NAME: reactjs-image-fullstack
+  IMAGE_NAME: fullstack-afternoon
 jobs:
   build-and-push:
     runs-on: ubuntu-latest 
-    environment: DOCKER_REPOSITORY01
+    environment: DOCKER_REPOSITORY02
     steps: 
       - name: Checkout Code 
         uses: actions/checkout@v3
